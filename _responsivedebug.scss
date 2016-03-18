@@ -1,0 +1,62 @@
+/*AT RESPONSIVE*/
+/*
+ * RESPONSIVE DEBUG INFO
+ */
+
+.responsivedebug:after {
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    left: 0;
+    padding: 2px 4px;
+    position: fixed;
+    text-transform: lowercase;
+    bottom: 0;
+    z-index: 9999;
+    box-shadow: -1px 1px 3px black;
+}
+/*
+ * RESPONSIVE DEBUG STANDARD LAYOUT
+ */
+
+@media only screen and (min-width: 1025px) {
+    .responsivedebug:after {
+        content: 'Standard layout';
+    }
+}
+/*
+ * RESPONSIVE DEBUG TABLET LANDSCAPE
+ */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .responsivedebug:after {
+        content: 'Tablet landscape';
+    }
+}
+/*
+ * RESPONSIVE DEBUG TABLET PORTRAIT
+ */
+
+@media only screen and (min-width: 581px) and (max-width: 768px) {
+    .responsivedebug:after {
+        content: 'Tablet portrait';
+    }
+}
+/*
+ * RESPONSIVE DEBUG SMALLTOUCH LANDSCAPE
+ */
+
+@media only screen and (min-width: 321px) and (max-width: 580px) {
+    .responsivedebug:after {
+        content: 'Smalltouch landscape';
+    }
+}
+/*
+ * RESPONSIVE DEBUG SMALLTOUCH PORTRAIT
+ */
+
+@media only screen and (max-width: 320px) {
+    .responsivedebug:after {
+        content: 'Smalltouch portrait';
+    }
+}
